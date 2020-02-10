@@ -6,5 +6,10 @@
     color: #ff4141;
 }
 #jumbo{
-    
+    background-image: url("/img/temp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn:hover{
+    background-color: #ec4141;
 }
