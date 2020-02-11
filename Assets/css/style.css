@@ -1,15 +1,1 @@
-.btn-primary{
-    background-color: #ff4141;
-    border: none;
-}
-.text-myred{
-    color: #ff4141;
-}
-#jumbo{
-    background-image: url("/img/temp.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.btn:hover{
-    background-color: #ec4141;
-}
+body{margin-left:0}body .red{color:#ec4141}body .btn-primary{background-color:#ec4141;border:none}body header nav #navbarTogglerDemo02 .searchbar{margin-bottom:auto;margin-top:auto;height:40px;background-color:#0c0c0c5d}body header nav #navbarTogglerDemo02 .searchbar .search_icon{height:30px;width:30px;float:right;display:flex;justify-content:center;align-items:center;border-radius:50%;color:#fff;text-decoration:none}body header nav #navbarTogglerDemo02 .searchbar .search_input{color:#fff;border:0;outline:0;width:0;background:none;caret-color:transparent;line-height:35px}body header nav #navbarTogglerDemo02 .searchbar>.search_input{padding:0 5px;width:60%;caret-color:#fff}body header nav #navbarTogglerDemo02 ul .btn{background-color:#ec4141;color:#fff;width:100px;height:40px;border:none}body header nav #navbarTogglerDemo02 ul .btn-void{background-color:#0c0c0c5d}body header nav #navbarTogglerDemo02 ul #contact{color:#fff}

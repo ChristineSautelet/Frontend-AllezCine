@@ -3,41 +3,80 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Ceci est un site réalisé par Timothy Tedaldi et Adam Zaev">
+    <meta name="Description" content="A Website made by Timothy Tedaldi & Adam Zaev">
     <title>AllezCine</title>
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid" id='jumbo'>
-        <nav class="navbar navbar-expand-lg navbar-transparent container-fluid row">
-            <div class="col-md-3">
-                <h2 class="display-3 text-center text-uppercase font-weight-bold text-myred">
-                    Allez<b class="text-white">Cine</b>
-                </h2>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-fluid">
+            <div class="ml-0 text-justify">    
+                <h2 class=" navbar-brand text-uppercase font-weight-bold display-1"><span class="red">Allez</span>Cine</h2>
             </div>
-            <div class="col-md-3  text-center">
-                <p>HELLO</p>
-            </div>
-            <div class="col-md-3  text-center">
-                <a class="text-white text-uppercase" href="">Contact</a>
-            </div>
-            <div class="col-md-3" id="search">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center my-auto">
+                    <li class="nav-item active">
+                        <p class="nav-link" href="#"><span class="red">Home</span></p>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle my-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Genre
+                            </button>
+                            <div class="dropdown-menu">
+                                <button class="dropdown-item border-bottom" type="button">Action</button>
+                                <button class="dropdown-item border" type="button">Comedy</button>
+                                <button class="dropdown-item border" type="button">Western</button>
+                                <button class="dropdown-item border-top" type="button">Fiction</button>
+                            </div>                   
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-void ml-1 mt-1 my-auto"></button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-void ml-1 mt-1 my-auto"></button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-void ml-1 mt-1 my-auto"></button>
+                    </li>
+                    <li class="nav-item active">
+                        <p class="nav-link" href="#" id="contact">Contact</p>
+                    </li>
+                </ul>
+                <form class="searchbar rounded-pill" id="search">
+                    <input class="search_input" type="text" name="" placeholder="Search...">
+                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                </form>
             </div>
         </nav>
-        <div class="text-center">
-            <h1 class="display-2 text-uppercase font-weight-bolder text-myred">
-                Latest 
-                <b class="text-white">On</b>line
-                <b class="text-white">Mo</b>vies
-            </h1>
-            <p class="lead text-white">This is will contain the title later i swear</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="text-center mt-5">
+            <h1 class="display-1 text-uppercase font-weight-bold"><span class="red">Latest</span> On<span class="red">line</span> Mo<span class="red">vies</span></h1>
+            <p class="lead">Name of the movie here SOON</p>
             <a class="btn btn-primary btn-lg text-uppercase" href="#" role="button">Watch Trailer</a>
         </div>
-      </div>
-    <script src="Script/script.js"></script>
+        <br>
+        <br>
+    </header>
+
+    
+
+    <!-- SCRIPT HERE -->
+    <script src="script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
