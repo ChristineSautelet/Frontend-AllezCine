@@ -13,9 +13,18 @@ body{
         border: none;
     }
     header{
+        background-repeat: no-repeat;
+        background-size: cover;
         nav{
-           
+            margin-left: 0;
+            display: flex;
+            #AllezCine{
+                font-size: 60px;
+                text-align: left ;
+                color: $primarytextcolor;
+            }
             #navbarTogglerDemo02{
+                margin-left: 20%;
                 .searchbar{
                     margin-bottom: auto;
                     margin-top: auto;
@@ -53,17 +62,25 @@ body{
                         background-color: $primarybgcolor;
                         color: $primarytextcolor;
                         width: 100px;
-                        height: 40px; 
+                        height: 40px;
                         border: none;
                     }
                     .btn-void{
                         background-color: #0c0c0c5d;
+                        width: 60px;
+                        height: 40px;
                     }
                     #contact{
                         color: $primarytextcolor;
                     }
                 }
             }
+        }
+        #TTjumbo{
+            margin:0;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            color: $primarytextcolor;
         }
     }
 }
