@@ -1,0 +1,607 @@
+<html>
+   <head>
+      <style>
+      p {
+         color:white;
+         background-color:gray;
+      }
+      </style>
+   </head>
+   <body>
+      <p>This is my first paragraph. </p>
+      <p>This is my second paragraph. </p>
+   </body>
+</html>
+
+
+Cascade
+
+The final appearance of a web page is a result of different styling rules.
+
+The three main sources of style information that form a cascade are:
+
+- The stylesheet created by the author of the page
+- The browser's default styles
+- Styles specified by the user
+CSS is an acronym for Cascading Style Sheets.
+Inheritance
+
+Inheritance refers to the way properties flow through the page. A child element will usually take on the characteristics of the parent element unless otherwise defined.
+
+For example:
+<html>
+   <head>
+      <style>
+      body {
+         color: green;
+         font-family: Arial;
+      }
+     </style>
+   </head>
+   <body>       
+      <p>
+      This is a text inside the paragraph. 
+      </p>
+   </body>
+</html>
+
+The font-family Property
+
+The font-family property specifies the font for an element.
+There are two types of font family names:
+- font family: a specific font family (like Times New Roman or Arial)
+- generic family: a group of font families with a similar look (like Serif or Monospace)
+
+Here is an example of different font styles:
+
+
+The HTML:
+<p class="serif">
+   This is a paragraph shown in serif font.
+</p>
+<p class="sansserif">
+   This is a paragraph shown in sans-serif font.
+</p> 
+<p class="monospace">
+   This is a paragraph shown in monospace font.
+</p> 
+<p class="cursive">
+   This is a paragraph shown in cursive font.
+</p> 
+<p class="fantasy">
+   This is a paragraph shown in fantasy font.
+</p> 
+
+The CSS:
+p.serif {
+   font-family: "Times New Roman", Times, serif;
+}
+p.sansserif {
+   font-family: Helvetica, Arial, sans-serif;
+}
+p.monospace {
+   font-family: "Courier New", Courier, monospace;
+}
+p.cursive {
+   font-family: Florence, cursive;
+}
+p.fantasy {
+   font-family: Blippo, fantasy;
+}
+
+The font-size Property
+
+The font-size property sets the size of a font. One way to set the size of fonts on the web is to use keywords. For example xx-small, small, medium, large, larger, etc.
+
+The HTML:
+<p class="small">
+   Paragraph text set to be small
+</p>
+<p class="medium">
+   Paragraph text set to be medium
+</p>
+<p class="large">
+   Paragraph text set to be large
+</p>
+<p class="xlarge">
+   Paragraph text set to be very large
+</p>
+
+The CSS:
+p.small {
+   font-size: small;
+}
+p.medium {
+   font-size: medium;
+}
+p.large {
+   font-size: large;
+}
+p.xlarge {
+   font-size: x-large;
+}
+
+
+The font-size Property
+
+You can also use numerical values in pixels or ems to manipulate font size.
+Setting the font size in pixel values (px) is a good choice when you need pixel accuracy, and it gives you full control over the text size.
+The em size unit is another way to set the font size (em is a relative size unit). It allows all major browsers to resize the text. If you haven't set the font size anywhere on the page, then it is the browser default size, which is 16px.
+
+To calculate the em size, just use the following formula: em = pixels / 16
+For example:
+h1 {
+   font-size: 20px;
+}
+Try It Yourself
+
+h1 {
+   font-size: 1.25em; 
+   
+   
+The font-style Property
+
+The font-style property is typically used to specify italic text.
+
+The HTML:
+<p class="italic">This is a paragraph in italic style.</p>
+
+The CSS:
+p.italic {
+   font-style: italic;
+}
+
+The border-style Property
+
+The default value of border-style is none, which defines no border.
+There are various styles supported for the border-style property: dotted, dashed, double, etc. The example below illustrates the differences between them.
+
+The HTML:
+<p class="none">This paragraph has no border.</p>
+<p class="dotted">This is a dotted border.</p>
+<p class="dashed">This is a dashed border.</p>
+<p class="double">This is a double border.</p>
+<p class="groove">This is a grooved border.</p>
+<p class="ridge">This is a ridged border.</p>
+<p class="inset">This is an inset border.</p>
+<p class="outset">This is an outset border.</p>
+<p class="hidden">This is a hidden border.</p>
+
+The CSS:
+p.none {border-style: none;}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.hidden {border-style: hidden;}
+
+
+Links' Text Decoration
+
+By default, text links are underlined by the browser.
+One of the most common uses of CSS with links is to remove the underline. In the example below, the text-decoration property is used to remove the underline.
+
+The HTML:
+<p><a href="http://www.sololearn.com" target="_blank">
+   This link has no underline.
+</a></p>
+
+The CSS:
+a:link {
+   text-decoration: none;
+}
+
+
+<span style="cursor:help;">
+   Do you need help?
+</span>
+
+There are numerous other possible values for the cursor property, such as:
+default - default cursor
+crosshair - cursor displays as crosshair
+pointer - cursor displays hand icon
+The list of possible values is quite long. The image below demonstrates the various available styles:
+
+Transparency Effect
+
+Before CSS3, transparent background images were used to create transparency effects. The new features of CSS3 now make it easier to create transparency effects.
+
+CSS supports color names, hexadecimal, and RGB colors.
+In addition, CSS3 introduces the following:
+
+RGBA Colors
+RGBA color values are an extension of RGB color values with an alpha channel, which specifies the opacity for a color.
+An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+
+HSL (Hue, Saturation, Lightness) Colors
+An HSL color value is specified with: hsl(hue, saturation, lightness).
+Hue is a degree on the color wheel ranging from 0 to 360
+0 (or 360) is red, 120 is green, 240 is blue.
+Saturation is a percentage value: 100% is the full color.
+Lightness is also a percentage; 0% is dark (black) and 100% is white. HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color (just like RGBA).
+
+In the example below, a transparent glass menu bar is created with CSS3.
+
+In the HTML file, a <nav> tag containing an <ul> list with links has been added:
+<nav>
+   <ul>
+       <li><a href="#">COURSES</a></li>
+       <li><a href="#">DISCUSS</a></li>
+       <li><a href="#">TOP LEARNERS</a></li>
+       <li><a href="#">BLOG</a></li>
+   </ul>
+</nav>
+
+A number of CSS3 features are used to create the effects:
+body {
+   background:url("bg.jpg");
+}
+nav {
+   padding: 50px 0;
+   min-width: 500px; 
+}
+nav ul {
+   background: linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+nav ul li {
+   display: inline-block;
+}
+nav ul li a {
+   padding: 10px; 
+   color: #FFFFFF;
+   font-size: 18px;
+   font-family: Arial;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ 
+ Using the @font-face Rule
+
+Each form of the font family must be declared using the @font-face rule. In the example below, a custom font called "Delicious" is loaded and used for the heading.
+
+The HTML
+<h1>This is Our Headline</h1>
+
+The CSS
+@font-face {
+  font-family: Delicious; 
+  src: url('Delicious-Roman.otf'); 
+} 
+@font-face { 
+  font-family: Delicious; 
+  font-weight: bold; 
+  src: url('Delicious-Bold.otf'); 
+}
+h1{
+   font-family: Delicious, sans-serif; 
+}
+
+Internet Explorer has a built-in bug when multiple @font-face rules are defined. Using #iefix as shown below fixes the problem:
+@font-face { 
+   font-family: Delicious; 
+   src: url('Delicious-Roman.ttf');
+   src: url('Delicious-Roman.eot?#iefix'); 
+}
+ 
+ 
+ 
+ Creating Linear Gradients
+
+CSS3 gradients enable you to display smooth transitions between two or more specified colors. CSS3 defines two types of gradients: Linear and Radial.
+
+To create a linear gradient, you must define at least two color stops. Color stops are the colors among which you want to render smooth transitions. You can also set a starting point and a direction - or an angle - along with the gradient effect.
+In the example below, the colors blue and black are used to create a linear gradient from top to bottom.
+div {
+   float: left;
+   width: 300px; 
+   height: 100px;
+   margin: 4px;
+   color: #FFF;  
+   background:-moz-linear-gradient(DeepSkyBlue, Black);
+}
+Try It Yourself
+
+This syntax works in Mozilla (-moz). If you work with a different browser, add the corresponding prefix, so that the browser understands the gradient.
+
+Color Stops
+
+Colors can be added one after the other, separated with a comma. The browser will then determine each color stop position.
+In the example below, the linear gradient has multiple color stops and runs from top to bottom.
+background:-moz-linear-gradient(blue, yellow, green, pink, white);
+
+
+Color stop positions can be specified for each color.
+background:-moz-linear-gradient(blue 20%, yellow 30%, green 85%);
+
+In addition to percentages, you can also use px, em, and so on, to specify the color stops.
+If you use the same color stop position for two colors, a sharp line will be created between them.
+
+
+Direction of the Gradient
+
+The direction of the gradient can be changed.
+In the example below, the first gradient starts at left, moving right; the second one runs from bottom to top.
+div.first {
+   float: left;
+   width: 300px; 
+   height: 100px;
+   margin: 4px;
+   color: #FFF;  
+   background:-moz-linear-gradient(left, blue, green, white);
+} 
+div.second { 
+   float: left;
+   width: 300px; 
+   height: 100px;
+   margin: 4px;
+   background:-moz-linear-gradient(bottom, blue, green, white);
+   
+   
+   Angle of the Gradient
+
+As an alternative to predefined directions (bottom, top, right, left, bottom right, etc.), you can control the gradient's direction by specifying an angle.
+
+The angle is specified as an angle extending between a horizontal line and the gradient line. In other words, 0deg creates a left-to right-gradient, while 90deg generates a bottom-to-top gradient.
+div.first {
+   float: left;
+   width: 300px; 
+   height: 100px;
+   margin: 4px;
+   color: #FFF;
+   background:-moz-linear-gradient(bottom left, blue, green, white);
+}
+div.second {
+   float: left;
+   width: 300px; 
+   height: 100px;
+   margin: 4px;
+   background:-moz-linear-gradient(100deg, blue, green, white);
+}
+
+Repeating a Linear-Gradient
+
+The repeating-linear-gradient() function is used to repeat a linear gradient:
+background:-moz-repeating-linear-gradient(blue, green 20px);
+
+
+Radial Gradients
+
+To create a radial gradient, you must define at least two color stops.
+The radial gradient is defined by its center.
+
+The CSS syntax of the radial gradient looks like this:
+background: radial-gradient(position, shape or size, color-stops);
+
+The first value defines the gradient position. We can use a descriptive keyword, such as top, bottom, center, or left; or we can specify, for example, 50% 50% to set the gradient at the center or 0% 0% to set the gradient to start at top left.
+
+The second value defines the shape and the gradient size. There are two arguments to shape gradients: The first is the ellipse, which is the default; and the second is the circle.
+
+Setting the Shapes
+
+The shape parameter defines the shape. If you do not define the shape of the radial gradient, it will take the ellipse value by default.
+
+In the example below, we didn't specify the shape of the first div’s radial gradient, but for the second, we set the value to circle.
+Here is what happened:
+
+The CSS:
+div.first {
+   height: 150px;
+   width: 200px;
+   color: #FFF;
+   background: -moz-radial-gradient(green, yellow, blue);   
+}
+div.second {
+   height: 150px;
+   width: 200px;
+   color: #FFF;
+   background: -moz-radial-gradient(circle, green, yellow, blue);
+   
+   
+   Radial Gradient Position
+
+Essentially, we can use the same method used to specify the location of a background image with the background-position CSS property to specify the location of the ellipse’s center. We specify the horizontal position of the background, and - optionally - the vertical position using either keywords (left, center right, or top, center, bottom), length values, percentage values, or some combination of these.
+
+In the example below, the first gradient starts from the top left corner; in the second, we set 5% to the green, 15 % to the yellow and 60% to the blue.
+div.first {
+   height: 150px;
+   width: 200px;
+   color: #FFF;
+   background: -moz-radial-gradient(top left, green, yellow, blue);   
+}
+div.second {
+   height: 150px;
+   width: 200px;
+   color: #FFF;
+   background: -moz-radial-gradient(green 5%, yellow 15%, blue 60%); 
+}
+
+
+Setting the Color Stops
+
+As with linear gradients, a color stop is specified with a color, plus an optional stop position, which is a length or percentage value.
+
+Here's a simple circular gradient with color stops:
+background: -moz-radial-gradient(circle, green 40%, yellow 50%, blue 70%); 
+
+
+The background-size Property
+
+The background-size property adds new functionality to CSS that allows us to specify the size of background images, using either lengths or percentages.
+
+For example:
+div {
+   height: 150px;
+   width: 200px;
+   border: 1px solid #000;
+   background: url("css_logo.png") no-repeat 50% 50%;
+   background-size: 100px 100px;
+}
+
+
+The current versions of most popular browsers - including Firefox, Safari, Chrome, Internet Explorer, and Opera - now support background-size, without the need for vendor prefixes.
+
+The background-size Values
+
+The two other possible values for background size are the keywords contain and cover.
+
+The contain keyword scales the image so that it fits the container.
+In other words, the image will grow or shrink proportionally, but the width and height will not exceed the container's dimensions:
+
+CSS syntax looks like this:
+background-size: contain;
+Try It Yourself
+
+Result:
+
+
+background-size also accepts the cover keyword. The image is scaled to fit the entire container; however, if that has a different aspect ratio, the image will be cropped:
+
+CSS syntax looks like this:
+background-size: cover;
+Try It Yourself
+
+Result:
+
+
+The background-clip Property
+
+The background-clip property specifies the painting area of the background.
+
+The property takes three different values:
+
+border-box - (default) the background is painted to the outside edge of the border
+padding-box - the background is painted to the outside edge of the padding
+content-box - the background is painted within the content box
+
+In the example below, the first div with background-clip is set to padding-box; in the second div it's set to content-box.
+#first {
+   border: 2px dotted black;
+   padding: 20px;
+   background: LightBlue;
+   background-clip: padding-box;
+}
+#second {
+   border: 2px dotted black;
+   padding: 20px;
+   background: LightBlue;
+   background-clip: content-box;
+
+background-clip with Images
+
+background-clip also applies to background images.
+The CSS:
+div {
+   background-image: url("css-logo.png");
+   background-clip: content-box;
+}
+
+
+
+Transparent Borders with background-clip
+
+Setting a transparent border on an element will reveal the element’s own background under the border.
+In the example below, we set the borders to be transparent using RGBA, but they actually appear solid gray.
+
+The CSS:
+border: 20px solid rgba(0, 0, 0, 0.3);
+
+
+
+By setting the background-clip property to padding-box, the borders will be made transparent.
+
+The CSS:
+border: 20px solid rgba(0, 0, 0, 0.3);
+-moz-background-clip: padding-box;    
+background-clip: padding-box; 
+Try It Yourself
+
+Result:
+
+
+Transparency effect is achieved with the background-clip:padding-box. Without it, the background of the box also goes beneath the borders, making it non-transparent.
+
+Multiple Backgrounds
+
+The ability to have multiple background images is a new feature in CSS3.
+Multiple background images are specified using a comma-separated list of values for the background-image property. The first image will appear on the top, the last on the bottom.
+
+In the example below, we have two background images: the first is a CSS logo (aligned to the bottom and right); the second is a coding image (aligned to the top-left corner).
+
+The CSS:
+div {
+  width: 400px;
+  height: 300px;
+  background-image: url(csslogo.png), url(csscode.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+} 
+
+Multiple Backgrounds
+
+The position of the background images can be changed, using the background-position property.
+For example:
+div {
+   width: 400px;
+   height: 300px;
+   background-image: url(csslogo.png), url(csscode.jpg);
+   background-position: right top, left top;
+   background-repeat: no-repeat;
+} 
+Multiple backgrounds can also be specified using the background: shorthand property.
+
+background: url(csslogo.png) right top no-repeat, 
+url(csscode.jpg) left top no-repeat; 
+
+The opacity Property
+
+CSS opacity property provides an excellent means of adding opacity to any element.
+In the example below, we set different levels of opacity to the same picture, so you can clearly see the difference.
+#img1 {
+   opacity: 1;
+}
+#img2 {
+   opacity: 0.5;
+}
+#img3 {
+   opacity: 0.25;
+}
+
+Opacity in Internet Explorer
+
+To have the opacity property work in all versions of IE, use the filter:alpha(opacity=x) along with the opacity property. x can take a value from 0 to 100.
+The value 0 results in a completely transparent element (i.e., 100% transparent), whereas the value 100 makes the element completely opaque (i.e., 0% transparent).
+
+For example, in order to have the code work properly with IE, when the opacity of the image is set at 0.5, it should look like this:
+#img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+
+animation Property
+
+Consider the following example:
+div {
+   animation-name: colorchange;
+   animation-duration: 3s;
+   animation-timing-function: ease-in;
+   animation-delay: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: reverse;
+}
+Try It Yourself
+
+A single animation property can be used to achieve the same result as the above code:
+div { 
+   animation: colorchange 3s ease-in 1s infinite reverse;
+}

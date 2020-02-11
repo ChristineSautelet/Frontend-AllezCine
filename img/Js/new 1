@@ -1,0 +1,32 @@
+#Ruby
+
+#Afficher texte :
+#-------------------------------
+
+puts "TEXT HERE";
+print "TEXT HERE"; 
+#(print affiche les textes les un à la suite des autres là ou puts affiche un texte avant de passer à la ligne !!)
+
+=begin
+	ceci est un autre moyen de mettre
+	une suite de texte en commentaire !
+=end
+
+#Assigner variables
+#-------------------------------
+
+VariableAAssigner = 19; 
+=begin
+	Attention, assigner une valeur de cette manière, équivaut à définir une constante.
+	On peut peut donc pas réassigner une valeur à cette variables sous peine de recevoir un message d'erreur
+	Pas besoin de préciser de quel type de donnée il s'agit en Ruby !!
+	
+=end
+
+#Afficher une variable dans un texte
+#-------------------------------
+
+age = 42
+puts "He is #{age} years old"
+
+#l'output sera : He is 42 years old.

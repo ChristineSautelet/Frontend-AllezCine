@@ -4,7 +4,7 @@ $primarytextcolor: white;
 $secundarytextcolor: #ec4141;
 
 body{
-    margin-left: 0;
+    margin:0;
     .red{
         color: $secundarytextcolor;
     }
@@ -13,6 +13,8 @@ body{
         border: none;
     }
     header{
+        margin-top: 0;
+        background-color: transparent !important;
         background-repeat: no-repeat;
         background-size: cover;
         nav{
@@ -66,7 +68,7 @@ body{
                         border: none;
                     }
                     .btn-void{
-                        background-color: #0c0c0c5d;
+                        background-color: #36050591;
                         width: 60px;
                         height: 40px;
                     }
@@ -83,4 +85,24 @@ body{
             color: $primarytextcolor;
         }
     }
+}
+
+#carousel {
+    position: absolute;
+    top: -7%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.carousel-inner,.carousel-item {
+    height: 100%;
+}
+.carousel-item {
+    background: no-repeat center/cover;
+}
+ol.carousel-indicators {
+    margin-bottom: 10%;
+}
+div.carousel-item {
+    filter: brightness(50%);
 }

@@ -1,0 +1,3 @@
+let texte = 'Timothy, Tedaldi';
+let texteSéparé = texte.split(',');
+console.log(texteSéparé);

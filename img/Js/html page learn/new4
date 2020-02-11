@@ -1,0 +1,160 @@
+Animations
+
+To create an animation, we need to change the properties of an element at small intervals of time. We can achieve this by using the setInterval() method, which allows us to create a timer and call a function to change properties repeatedly at defined intervals (in milliseconds).
+For example:
+var t = setInterval(move, 500); 
+
+This code creates a timer that calls a move() function every 500 milliseconds.
+Now we need to define the move() function, that changes the position of the box.
+// starting position
+var pos = 0; 
+//our box element
+var box = document.getElementById("box");
+
+function move() {
+  pos += 1;
+  box.style.left = pos+"px"; //px = pixels
+}
+
+
+
+Animations
+
+The following code defines a timer that calls the move() function every 10 milliseconds:
+var t = setInterval(move, 10);
+
+However, this makes our box move to the right forever. To stop the animation when the box reaches the end of the container, we add a simple check to the move() function and use the clearInterval() method to stop the timer.
+function move() {
+  if(pos >= 150) {
+    clearInterval(t);
+  }
+  else {
+    pos += 1;
+    box.style.left = pos+"px";
+  }
+}
+
+When the left attribute of the box reaches the value of 150, the box reaches the end of the container, based on a container width of 200 and a box width of 50.
+The final code:
+var pos = 0; 
+//our box element
+var box = document.getElementById("box");
+var t = setInterval(move, 10);
+
+function move() {
+  if(pos >= 150) {
+    clearInterval(t);
+  }
+  else {
+    pos += 1;
+    box.style.left = pos+"px";
+  }
+}
+Try It Yourself
+
+Form Validation
+
+HTML5 adds some attributes that allow form validation. For example, the required attribute can be added to an input field to make it mandatory to fill in.
+More complex form validation can be done using JavaScript.
+The form element has an onsubmit event that can be handled to perform validation.
+For example, let's create a form with two inputs and one button. The text in both fields should be the same and not blank to pass the validation.
+<form onsubmit="return validate()" method="post">
+  Number: <input type="text" name="num1" id="num1" />
+  <br />
+  Repeat: <input type="text" name="num2" id="num2" />
+  <br />
+  <input type="submit" value="Submit" />
+</form>
+
+Now we need to define the validate() function:
+function validate() {
+  var n1 = document.getElementById("num1");
+  var n2 = document.getElementById("num2");
+  if(n1.value != "" && n2.value != "") {
+    if(n1.value == n2.value) {
+      return true;
+    }
+  }
+  alert("The values should be equal and not blank");
+  return false;
+}
+Try It Yourself
+
+We return true only when the values are not blank and are equal.
+The form will not get submitted if its onsubmit event returns false.
+305 C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ECMAScript 6
+
+ECMAScript (ES) is a scripting language specification created to standardize JavaScript.
+
+The Sixth Edition, initially known as ECMAScript 6 (ES6) and later renamed to ECMAScript 2015, adds significant new syntax for writing complex applications, including classes and modules, iterators and for/of loops, generators, arrow functions, binary data, typed arrays, collections (maps, sets and weak maps), promises, number and math enhancements, reflection, and proxies.
+
+In other words, ES6 is a superset of JavaScript (ES5). The reason that ES6 became so popular is that it introduced new conventions and OOP concepts such as classes.
+In this module, we cover the most important additions to ES6.
+So, let's jump right in!
+178 COM
+
+
+Functions in ECMAScript 6
+
+Prior to ES6, a JavaScript function was defined like this:
+function add(x, y) {
+  var sum = x+y;  
+  console.log(sum);
+}
+Try It Yourself
+
+ES6 introduces a new syntax for writing functions. The same function from above can be written as:
+const add = (x, y) => {
+  let sum = x + y;  
+  console.log(sum);
+}
+Try It Yourself
+
+This new syntax is quite handy when you just need a simple function with one argument.
+You can skip typing function and return, as well as some parentheses and braces.
+For example:
+const greet = x => "Welcome " + x;
+Try It Yourself
+
+The code above defines a function named greet that has one argument and returns a message.
+
+If there are no parameters, an empty pair of parentheses should be used, as in
+const x = () => alert("Hi");
+Try It Yourself
+
+The syntax is very useful for inline functions. For example, let's say we have an array, and for each element of the array we need to execute a function. We use the forEach method of the array to call a function for each element:
+var arr = [2, 3, 7, 8];
+
+arr.forEach(function(el) {
+  console.log(el * 2);
+});
+Try It Yourself
+
+However, in ES6, the code above can be rewritten as following:
+const arr = [2, 3, 7, 8];
+
+arr.forEach(v => {
+  console.log(v * 2);
+});
+Try It Yourself
+
+The code is shorter and looks pretty nice, doesn't it? :)
+

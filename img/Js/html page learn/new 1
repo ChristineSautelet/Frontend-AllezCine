@@ -1,0 +1,8 @@
+
+Other elements can be used either as block level elements or inline elements. This includes the following elements:
+APPLET - embedded Java applet
+IFRAME - Inline frame
+INS - inserted text
+MAP - image map
+OBJECT - embedded object
+SCRIPT - script within an HTML document

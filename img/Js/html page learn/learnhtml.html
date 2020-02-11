@@ -1,0 +1,124 @@
+<html>
+   <head>
+      <title>first page</title>
+   </head>
+   <body>
+		<p>This is regular text </p>
+		<p><b> bold text </b></p>
+		<p><big> big text </big></p>
+		<p><i> italic text </i></p>
+		<p><small> small text </small></p>
+		<p><strong> strong text </strong></p>
+		<p><sub> subscripted text </sub></p>
+		<p><sup> superscripted text </sup></p>
+		<p><ins> inserted text </ins></p>
+		<p><del> deleted text </del></p>
+		<hr /> <!-- ceci est une ligne -->
+	
+		<h1><span>This is heading 1</span></h1>
+		<h2>This is heading 2</h2>
+		<h3>This is heading 3</h3>
+		<h4>This is heading 4</h4>
+		<h5>This is heading 5</h5>
+		<h6>This is heading 6</h6>
+		<hr />
+	
+		<p align="center"> 
+		This text is aligned to center
+		</p>	
+		<hr width="50px" />
+		<hr width="50%" />
+		<p align="center">This is a text <br />
+         <hr width="10%" align="right" /> This is also a text.
+		</p>
+		
+		<img src="http://users.skynet.be/rudy.tedaldi/img/Famille/Picasso.jpg" height="150px" width="150px" alt=""/>
+		<img src="http://users.skynet.be/rudy.tedaldi/img/Famille/Picasso.jpg" height="50%" border="1px" width="50%" alt=""/>
+		</br>
+		
+		<!-- Ouvre un hyperlien -->
+		<a href="http://www.sololearn.com"> Learn Playing </a>
+		<hr />
+		<!-- Ouvre un hyperlien dans un nouvel onglet !!!-->
+		<a href="http://www.sololearn.com" target="_blank">
+		Learn Playing
+		</a>
+		<hr />
+		
+		<!-- liste avec odre numéroté -->
+		<ol>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Green</li>
+		</ol>  
+		<hr />
+		
+		<!-- liste avec odre non numéroté -->
+		<ul>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Green</li>
+		</ul> 
+		<hr />
+		
+		<table border="2">	<!-- ajoute une bordure au tableau de 2 de large -->
+		   <tr>
+			  <td>Red</td>
+			  <td>Blue</td>
+			  <td>Green</td>
+		   </tr>
+		   <tr>
+			  <td><br /></td> <!-- le br / va laisser la cellule blanche dans ce cas ci -->
+			  <td colspan="2">orange</td> <!-- coldspan fusionne des case !! -->
+		   </tr>
+		</table>
+		
+		<form>
+			<input type="text" name="username" /><br />
+			<input type="password" name="password" />
+		</form>
+		
+		<input type="radio" name="gender" value="male" /> Male <br />
+		<input type="radio" name="gender" value="female" /> Female <br />
+		
+		<input type="checkbox" name="gender" value="1" /> Male <br />
+		<input type="checkbox" name="gender" value="2" /> Female <br />
+		
+		<input type="submit" value="Submit" /> 
+		
+		<h1><span>Contact Me</span></h1>
+		<form>
+		  <input name="name" type="text" /><br/>
+		  <input name="email" type="email" /><br/>
+		  <textarea name="message"></textarea>
+		  <input type="submit" value="SEND" class="submit" />
+		</form>
+<!--		
+		<html>
+		   <head> 
+			  <title>first page</title>  
+		   </head>
+		   <body bgcolor="#000099">
+			   <h1>
+				<font color="#FFFFFF"> White headline </font>
+			   </h1> 
+		   </body>
+		</html>
+-->
+		<frameset cols="100, 25%, *"></frameset>
+		<frameset rows="100, 25%, *"></frameset>
+		   
+		<frameset cols="25%,50%,25%">
+		   <frame src="a.htm" />
+		   <frame src="b.htm" />
+		   <frame src="c.htm" />
+		   <noframes>Frames not supported!</noframes>
+		</frameset>
+		
+		<div class="section">
+		  <h1><span>My Media</span></h1>
+		  <iframe height="150" width="300" src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen frameborder="0"></iframe>
+        </div>
+   
+   </body>
+</html>

@@ -12,55 +12,66 @@
     <title>AllezCine</title>
 </head>
 <body>
-    <header class="jumbotron jumbotron-fluid" id="TTjumbotron-slider">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-fluid">
-            <h2 class="text-left text-uppercase font-weight-bold" id="AllezCine"><span class="red">Allez</span>Cine</h2>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center my-auto">
-                    <li class="nav-item active mr-5">
-                        <p class="nav-link" href="#"><span class="red">Home</span></p>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle my-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Genre
-                            </button>
-                            <div class="dropdown-menu">
-                                <button class="dropdown-item border-bottom" type="button">Action</button>
-                                <button class="dropdown-item border" type="button">Comedy</button>
-                                <button class="dropdown-item border" type="button">Western</button>
-                                <button class="dropdown-item border-top" type="button">Fiction</button>
-                            </div>                   
-                        </div>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-void ml-3 my-auto"></button>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-void ml-3 my-auto"></button>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-void ml-3 my-auto"></button>
-                    </li>
-                    <li class="nav-item active ml-5">
-                        <p class="nav-link" href="#" id="contact">Contact</p>
-                    </li>
-                </ul>
-                <form class="searchbar rounded-pill" id="search">
-                    <input class="search_input" type="text" name="" placeholder="Search...">
-                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-                </form>
+    <header class="jumbotron jumbotron-fluid container-fluid carousel slide carousel-inner" id="carousel" data-ride="carousel">
+            <div class="carousel-item active carred" style="background-image:url('/img/temp.jpg');z-index: -1;" id="slide1"></div>
+            <div class="carousel-item" style="background-image:url('/img/Pika.jpg'); z-index: -1;" id="slide2"></div>
+            <div class="carousel-item" style="background-image:url('/img/Peluche.jpg');z-index: -1;" id="slide3"></div>
+            <div class="carousel-item" style="background-image:url('/img/Picasso.jpg');z-index: -1;" id="slide4"></div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-fluid">
+                <h2 class="text-left text-uppercase font-weight-bold" id="AllezCine"><span class="red">Allez</span>Cine</h2>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center my-auto">
+                        <li class="nav-item active mr-5">
+                            <p class="nav-link" href="#"><span class="red">Home</span></p>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle my-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Genre
+                                </button>
+                                <div class="dropdown-menu">
+                                    <button class="dropdown-item border-bottom" type="button">Action</button>
+                                    <button class="dropdown-item border" type="button">Comedy</button>
+                                    <button class="dropdown-item border" type="button">Western</button>
+                                    <button class="dropdown-item border-top" type="button">Fiction</button>
+                                </div>                   
+                            </div>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-void ml-3 my-auto"></button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-void ml-3 my-auto"></button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-void ml-3 my-auto"></button>
+                        </li>
+                        <li class="nav-item active ml-5">
+                            <p class="nav-link" href="#" id="contact">Contact</p>
+                        </li>
+                    </ul>
+                    <form class="searchbar rounded-pill" id="search">
+                        <input class="search_input" type="text" name="" placeholder="Search...">
+                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                    </form>
+                </div>
+            </nav>
+        
+            <div class="text-center mt-5" id="TTjumbo">
+                <h1 class="display-1 text-uppercase font-weight-bold"><span class="red">Latest</span> On<span class="red">line</span> Mo<span class="red">vies</span></h1>
+                <p class="lead">In Space No One Can Hear You Scream</p>
+                <a class="btn btn-primary btn-lg text-uppercase" href="#" role="button">Watch Trailer</a>
             </div>
-        </nav>
-    
-        <div class="text-center mt-5" id="TTjumbo">
-            <h1 class="display-1 text-uppercase font-weight-bold"><span class="red">Latest</span> On<span class="red">line</span> Mo<span class="red">vies</span></h1>
-            <p class="lead">Name of the movie here SOON</p>
-            <a class="btn btn-primary btn-lg text-uppercase" href="#" role="button">Watch Trailer</a>
-        </div>
+
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+            </ol>
     </header>
 
     <!-- SCRIPT HERE -->
