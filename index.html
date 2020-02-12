@@ -29,9 +29,9 @@
         <div class="carousel-item" style="background-image:url('/img/Pika.jpg'); z-index: -1;" id="slide2"></div>
         <div class="carousel-item" style="background-image:url('/img/Peluche.jpg');z-index: -1;" id="slide3"></div>
         <div class="carousel-item" style="background-image:url('/img/Picasso.jpg');z-index: -1;" id="slide4"></div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent container-fluid">
             <h2 class="text-left text-uppercase font-weight-bold" id="AllezCine"><span class="red">Allez</span>Cine</h2>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -226,19 +226,95 @@
     <!-- MAIN -->
 
     <div class="container-fluid text-info" id="TTmain-container">  
-        <p>MAIN CONTAINER STARTING HERE</p>
     </div>
     
     <!-- FOOTER -->
 
-    <footer>
-        
+    <footer class="footer w-100 pt-5">
+        <div class="container-fluid text-center pt-5 row my-auto" id="TTsubs">
+            <div class="col-12 text-center text-uppercase">
+                <h3 class="display-4 font-weight-bold"> subscribe to us </h2>
+            </div>
+            <div class="col-4"></div>
+            <div class="form-group mt-5 text-center col-3 my-auto">
+                <input type="email" class="form-control" id="TTinputEmail" aria-describedby="emailHelp" placeholder="Enter your email...">
+            </div>
+            <button class="text-uppercase btn btn-primary col-1 my-auto" id="TTsubs-btn">
+                subscribe
+            </button>
+            <div class="col-4"></div>
+        </div>
+        <div class="container-fluid mt-5">
+            <div id="TTfooter-header" class="row">
+                <div class="col-2 ml-5 mr-3 row">
+                    <h4 class="col-12">Release</h4>
+                    <hr />
+                    <p class="col-12">2016</p>
+                    <p class="col-12">2015</p>
+                    <p class="col-12">2014</p>
+                    <p class="col-12">2013</p>
+                    <p class="col-12">2012</p>
+                </div>
+                <div class="col-2 ml-5 mr-3 row">
+                    <h4 class="col-12">Movies</h4>
+                    <hr />
+                    <p class="col-12">Adventure</p>
+                    <p class="col-12">comedy</p>
+                    <p class="col-12">fantasy</p>
+                    <p class="col-12">action</p>
+                    <p class="col-12">horror</p>
+                </div>
+                <div class="col-2 ml-5 mr-3 row">
+                    <h4 class="col-12">Review movies</h4>
+                    <hr />
+                    <p class="col-12">Adventure</p>
+                    <p class="col-12">comedy</p>
+                    <p class="col-12">fantasy</p>
+                    <p class="col-12">action</p>
+                    <p class="col-12">horror</p>
+                </div>
+                <div class="col-2 ml-5 mr-3 row">
+                    <h4 class="col-12">Latest movies</h4>
+                    <hr />
+                    <p class="col-12">Adventure</p>
+                    <p class="col-12">comedy</p>
+                    <p class="col-12">fantasy</p>
+                    <p class="col-12">action</p>
+                    <p class="col-12">horror</p>
+                </div>
+                <div class="col-2 ml-5 row">
+                    <h4 class="col-12"><span class="red">Allez</span>Cine</h4>
+                    <hr />
+                    <p class="col-12">Adventure</p>
+                    <p class="col-12">comedy</p>
+                    <p class="col-12">fantasy</p>
+                    <p class="col-12">action</p>
+                    <p class="col-12">horror</p>
+                </div>
+                <hr class="col-12"/>
+                <hr class="col-12 mt-5"/>
+                <div class="col-12">
+                    <h3 class="display-5 text-light text-center text-uppercase">Connect us</h2>
+                </div>
+                <div class="col-12 text-center text-light" id="TTicon-socialNet">
+                    <a href="#"><i class="fab fa-facebook-f border border-light p-3"></i></a> 
+                    <a href="#"><i class="fab fa-twitter border border-light p-3"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in border border-light p-3"></i></a>
+                    <a href="#"><i class="fab fa-youtube border border-light p-3"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g border border-light p-3"></i></a>
+                </div>
+                <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+            </div>
+        </div>
     </footer>
+
+    <!-- BACK TO TOP -->
 
 
     <!-- SCRIPT HERE -->
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/backToTop.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
