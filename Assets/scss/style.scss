@@ -1,10 +1,12 @@
+
 $primarybgcolor: #ec4141;
 $secundarybgcolor: white;
 $primarytextcolor: white;
 $secundarytextcolor: #ec4141;
 
 body{
-    margin:0;
+    margin: 0 !important;
+    padding: 0 !important;
     .red{
         color: $secundarytextcolor;
     }
@@ -12,12 +14,32 @@ body{
         background-color: $primarybgcolor;
         border: none;
     }
-    header{
+    #carousel {
+        position: absolute;
         margin-top: 0;
+        top: -8%;
+        bottom: 0; 
+        left: 0;
+        right: 0;
+        .carousel-inner,.carousel-item {
+            height: 100%;
+        }
+        .carousel-item {
+            background: no-repeat center/cover;
+        }
+        ol.carousel-indicators {
+            margin-bottom: 10%;
+        }
+        div.carousel-item {
+            filter: brightness(50%);
+        }
+    }
+    .jumbotron{
         background-color: transparent !important;
         background-repeat: no-repeat;
         background-size: cover;
         nav{
+            margin-top: 3%;
             margin-left: 0;
             display: flex;
             #AllezCine{
@@ -33,8 +55,8 @@ body{
                     height: 40px;
                     background-color: #0c0c0c5d;
                     .search_icon{
-                        height: 30px;
-                        width: 30px;
+                        height: 35px;
+                        width: 60px;
                         float: right;
                         display: flex;
                         justify-content: center;
@@ -42,6 +64,9 @@ body{
                         border-radius: 50%;
                         color: $primarytextcolor;
                         text-decoration:none;
+                        &:hover{
+                            color: $primarybgcolor;
+                        }
                     }
                     .search_input{
                         color: $primarytextcolor;
@@ -54,7 +79,7 @@ body{
                     }
                 }                
                 .searchbar > .search_input{
-                    padding: 0 5px;
+                    padding: 0 15px;
                     width: 60%;
                     caret-color:$primarytextcolor;
                 }
@@ -78,6 +103,11 @@ body{
                 }
             }
         }
+        #TTslider{
+            .active{
+                background-color: $primarybgcolor;
+            }
+        }
         #TTjumbo{
             margin:0;
             padding-top: 5%;
@@ -85,24 +115,80 @@ body{
             color: $primarytextcolor;
         }
     }
+    .black-btn{
+        background-color: black;
+        color: $primarytextcolor;
+    }
+    #TTlogin-row{
+        position:absolute;
+        bottom: 7%;
+        background-color: $primarybgcolor;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        color: $primarytextcolor;   
+    }
+    #TTmodalLog{
+        .modal-header{
+            background-color: $primarybgcolor;
+            #TTloginModalLabel{
+                color: $primarytextcolor;
+            }   
+        }
+        .modal-body{
+            .col-form-label{
+                color: $secundarytextcolor;
+            }
+            #TTcheckbox-container{
+                color: $secundarytextcolor;
+            }
+        }
+        #TTforgotten{
+            background-color: $primarybgcolor;
+            a{
+                color: white;
+            }
+        }
+    }
+    #TTmodalReg{
+        .modal-header{
+            background-color: $primarybgcolor;
+            #TTloginModalLabel{
+                color: $primarytextcolor;
+            }   
+        }
+        .modal-body{
+            .col-form-label{
+                color: $secundarytextcolor;
+            }
+            #TTcheckbox-container{
+                color: $secundarytextcolor;
+            }
+        }
+    }
+    
+    #TTmain-container{
+        position: absolute;
+        bottom: 0%;
+    }
+
+    footer{
+        background-color: black;
+    }
 }
 
-#carousel {
-    position: absolute;
-    top: -7%;
-    bottom: 0;
-    left: 0;
-    right: 0;
+
+/*
+.cookie {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
 }
-.carousel-inner,.carousel-item {
-    height: 100%;
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
 }
-.carousel-item {
-    background: no-repeat center/cover;
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
 }
-ol.carousel-indicators {
-    margin-bottom: 10%;
-}
-div.carousel-item {
-    filter: brightness(50%);
-}
+*/

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css"> <!-- Need it for cookie alert -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,67 +14,227 @@
     <title>AllezCine</title>
 </head>
 <body>
-    <header class="jumbotron jumbotron-fluid container-fluid carousel slide carousel-inner" id="carousel" data-ride="carousel">
-            <div class="carousel-item active carred" style="background-image:url('/img/temp.jpg');z-index: -1;" id="slide1"></div>
-            <div class="carousel-item" style="background-image:url('/img/Pika.jpg'); z-index: -1;" id="slide2"></div>
-            <div class="carousel-item" style="background-image:url('/img/Peluche.jpg');z-index: -1;" id="slide3"></div>
-            <div class="carousel-item" style="background-image:url('/img/Picasso.jpg');z-index: -1;" id="slide4"></div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-fluid">
-                <h2 class="text-left text-uppercase font-weight-bold" id="AllezCine"><span class="red">Allez</span>Cine</h2>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center my-auto">
-                        <li class="nav-item active mr-5">
-                            <p class="nav-link" href="#"><span class="red">Home</span></p>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-primary dropdown-toggle my-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Genre
-                                </button>
-                                <div class="dropdown-menu">
-                                    <button class="dropdown-item border-bottom" type="button">Action</button>
-                                    <button class="dropdown-item border" type="button">Comedy</button>
-                                    <button class="dropdown-item border" type="button">Western</button>
-                                    <button class="dropdown-item border-top" type="button">Fiction</button>
-                                </div>                   
-                            </div>
-                        </li>
-                        <li>
-                            <button type="button" class="btn btn-void ml-3 my-auto"></button>
-                        </li>
-                        <li>
-                            <button type="button" class="btn btn-void ml-3 my-auto"></button>
-                        </li>
-                        <li>
-                            <button type="button" class="btn btn-void ml-3 my-auto"></button>
-                        </li>
-                        <li class="nav-item active ml-5">
-                            <p class="nav-link" href="#" id="contact">Contact</p>
-                        </li>
-                    </ul>
-                    <form class="searchbar rounded-pill" id="search">
-                        <input class="search_input" type="text" name="" placeholder="Search...">
-                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-                    </form>
-                </div>
-            </nav>
-        
-            <div class="text-center mt-5" id="TTjumbo">
-                <h1 class="display-1 text-uppercase font-weight-bold"><span class="red">Latest</span> On<span class="red">line</span> Mo<span class="red">vies</span></h1>
-                <p class="lead">In Space No One Can Hear You Scream</p>
-                <a class="btn btn-primary btn-lg text-uppercase" href="#" role="button">Watch Trailer</a>
-            </div>
+    <!-- START Bootstrap-Cookie-Alert -->
+    <div class="alert text-center cookiealert" role="alert">
+        <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
 
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-                <li data-target="#carousel" data-slide-to="3"></li>
-            </ol>
-    </header>
+        <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+            I agree
+        </button>
+    </div>
+    <!-- END Bootstrap-Cookie-Alert -->
+
+    <div class="jumbotron jumbotron-fluid carousel slide carousel-inner col-12" id="carousel" data-ride="carousel">
+        <div class="carousel-item active carred" style="background-image:url('/img/temp.jpg'); z-index: -1;" id="slide1"></div>
+        <div class="carousel-item" style="background-image:url('/img/Pika.jpg'); z-index: -1;" id="slide2"></div>
+        <div class="carousel-item" style="background-image:url('/img/Peluche.jpg');z-index: -1;" id="slide3"></div>
+        <div class="carousel-item" style="background-image:url('/img/Picasso.jpg');z-index: -1;" id="slide4"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-fluid">
+            <h2 class="text-left text-uppercase font-weight-bold" id="AllezCine"><span class="red">Allez</span>Cine</h2>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center my-auto">
+                    <li class="nav-item active mr-5">
+                        <p class="nav-link" href="#"><span class="red">Home</span></p>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle my-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Genre
+                            </button>
+                            <div class="dropdown-menu">
+                                <button class="dropdown-item border-bottom" type="button">Action</button>
+                                <button class="dropdown-item border" type="button">Comedy</button>
+                                <button class="dropdown-item border" type="button">Western</button>
+                                <button class="dropdown-item border-top" type="button">Fiction</button>
+                            </div>                   
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-void ml-3 my-auto"></button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-void ml-3 my-auto"></button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-void ml-3 my-auto"></button>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <p class="nav-link" href="#" id="contact">Contact</p>
+                    </li>
+                </ul>
+                <form class="searchbar rounded-pill" id="search">
+                    <input class="search_input" type="text" name="" placeholder="Search...">
+                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                </form>
+            </div>
+        </nav>
+        
+        <div class="text-center mt-0" id="TTjumbo">
+            <h1 class="display-1 text-uppercase font-weight-bold"><span class="red">Latest</span> On<span class="red">line</span> Mo<span class="red">vies</span></h1>
+            <br>
+            <p class="lead">In Space No One Can Hear You Scream</p>
+            <br>
+            <a class="btn btn-primary btn-lg text-uppercase" href="#" role="button">Watch Trailer</a>
+        </div>
+
+        <ol class="carousel-indicators" id="TTslider">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+    </div>
+
+    <div class="container-fluid" id="TTlogin-row">
+        <div class="row">
+            <p class="ml-5 mr-5 my-auto">
+                <i class="fas fa-phone"></i>(+000)009 455 4088
+            </p>
+            <button class="text-uppercase black-btn btn ml-2 mr-2 my-auto" id="TTbtn-log" type="button" data-toggle="modal" data-target="#TTmodalLog" data-whatever="@mdo">
+                Login
+            </button>
+            <button class="text-uppercase black-btn btn ml-2 mr-2 my-auto" id="TTbtn-reg" type="button" data-toggle="modal" data-target="#TTmodalReg" data-whatever="@mdo">
+                Register
+            </button> 
+        </div>
+    </div>
+
+    <!-- LOGIN FORM -->
+    
+    <div class="modal fade" id="TTmodalLog" tabindex="-1" role="dialog" aria-labelledby="TTloginModalLabel" aria-hidden="true">
+        <div class="modal-dialog-centered modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-uppercase" id="TTloginModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Username</label>
+                  <input type="text" class="form-control" id="TTlogin-username">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Password</label>
+                    <input type="text" class="form-control" id="TTlogin-password">
+                </div>
+                
+                <div class="form-group form-check my-auto" id="TTcheckbox-container">
+                    <input type="checkbox" class="form-check-input " id="TTcheckbox">
+                    <label class="form-check-label mr-4 my-auto" for="TTcheckbox">Stay connected</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="text-uppercase black-btn btn ml-2 mr-2 my-auto" id="TTbtn-reg" type="button" data-dismiss="modal" data-toggle="modal" data-target="#TTmodalReg" data-whatever="@mdo">
+                    Create Account
+                </button>                 
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel </button>
+                <button type="button" class="btn btn-primary" id="SubmitBtn" data-dismiss="modal"> Ok </button>
+            </div>
+            <div class="modal-footer" id="TTforgotten">
+                <a class="forgot-password" href="http://www.nyan.cat/" target="_blank">Forgot your Username or Password? &raquo;</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- REGISTER FORM -->
+
+    <div class="modal fade" id="TTmodalReg" tabindex="-1" role="dialog" aria-labelledby="TTregModalLabel" aria-hidden="true">
+        <div class="modal-dialog-centered modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-uppercase text-light" id="TTregModalLabel">Register</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Username</label>
+                  <input type="text" class="form-control" id="TTreg-username">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Email</label>
+                    <input type="text" class="form-control" id="TTreg-username">
+                  </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Password</label>
+                    <input type="text" class="form-control" id="TTreg-password">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Confirm Password</label>
+                    <input type="text" class="form-control" id="TTreg-password">
+                </div>
+                <div class="text-center">
+                    <button class="text-uppercase black-btn btn my-auto" data-toggle="modal" data-target="#myModal">
+                        terms of use
+                    </button> 
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="SubmitBtn" data-dismiss="modal">Create Account</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- TERM OF USE -->
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">TERM OF USE</h4>
+            </div>
+            <div class="modal-body">
+                The cat (Felis catus) is a small carnivorous mammal. <br>
+                It is the only domesticated species in the family Felidae and often referred to as the domestic cat to distinguish it from wild members of the family. <br>
+                The cat is either a house cat, a farm cat or a feral cat; latter ranges freely and avoids human contact. <br>
+                Domestic cats are valued by humans for companionship and for their ability to hunt rodents. About 60 cat breeds are recognized by various cat registries. <br>
+                The cat is similar in anatomy to the other felid species, has a strong flexible body, quick reflexes, sharp teeth and retractable claws adapted to killing small prey. <br>
+                Its night vision and sense of smell are well developed. <br>
+                Cat communication includes vocalizations like meowing, purring, trilling, hissing, growling and grunting as well as cat-specific body language. <br>
+                It is a solitary hunter, but a social species. <br>
+                It can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small mammals. <br>
+                It is a predator that is most active at dawn and dusk. <br>
+                It secretes and perceives pheromones. <br>
+                Female domestic cats can have kittens from spring to late autumn, with litter sizes ranging from two to five kittens.<br>
+                Domestic cats are bred and shown as registered pedigreed cats, a hobby known as cat fancy. <br>
+                Failure to control breeding of pet cats by spaying and neutering, as well as abandonment of pets, resulted in large numbers of feral cats worldwide, contributing to the extinction of entire bird species, and evoking population control. <br>
+                It was long thought that cat domestication was initiated in Egypt, because cats in ancient Egypt were venerated since around 3100 BC. <br>
+                However, the earliest indication for the taming of an African wildcat (F. lybica) was found in Cyprus, where a cat skeleton was excavated close by a human Neolithic grave dating to around 7500 BC. <br>
+                African wildcats were probably first domesticated in the Near East. <br>
+                As of 2017, the domestic cat was the second-most popular pet in the United States by number of pets owned, after freshwater fish, with 95 million cats owned. <br>
+                In the United Kingdom, around 7.3 million cats lived in more than 4.8 million households as of 2019. <br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">AGREE</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+
+    <div class="container-fluid text-info" id="TTmain-container">  
+        <p>MAIN CONTAINER STARTING HERE</p>
+    </div>
+    
+    <!-- FOOTER -->
+
+    <footer>
+        
+    </footer>
+
 
     <!-- SCRIPT HERE -->
     
@@ -80,5 +242,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
 </body>
 </html>
