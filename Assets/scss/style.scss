@@ -166,31 +166,13 @@ body{
         }
     }
 
-    #TTmain-container{
-        position: relative;
-        bottom: -15%;
-        #TTcontact-container{
-            .card{
-                border: none;
-                .card-header{
-                    background-color: white;
-                    .contactus{
-                        margin-left: 5%;
-                        padding-left: 0.5%;
-                        border-left: solid 5px red;
-                        color: black;
-                        width: 150%;
-                    } 
-                }
-            }
-        }
-    }
+    
 
     footer{
         width: 100%;
         overflow:hidden;
-        bottom: -200%;
         background-color: black;
+        bottom: 5%;
         position: relative;
         #TTsubs{
             h3{
@@ -228,13 +210,25 @@ body{
         }
     }
 }
-
-@media only screen and (max-width: 1500px) {
-    footer {
-        bottom: -120vh !important;
-        position: absolute;
+#TTmain-container{
+    position: relative;
+    #TTcontact-container{
+        .card{
+            border: none;
+            .card-header{
+                background-color: white;
+                .contactus{
+                    width: 150%;
+                    margin-left: 5%;
+                    padding-left: 0.5%;
+                    border-left: solid 5px red;
+                    color: black;
+                } 
+            }
+        }
     }
 }
+
 
 #TTbtnUp {
     display: none;
@@ -258,3 +252,6 @@ body{
     }
 }
 
+.mydiv{
+    position: relative;
+}

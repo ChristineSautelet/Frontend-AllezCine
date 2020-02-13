@@ -93,7 +93,10 @@ body {
    margin-left: 120px;
    text-transform: uppercase;
    font-size: 30px;
-   color: #4C5155
+    padding-left: 0.5%;
+    border-left: solid 5px red;
+    color: black;
+                       
 
 }
 
@@ -104,17 +107,6 @@ body {
     background-color: red;
     padding: 20px
 
-
-}
-
-
-.mysvg {
-   position: absolute;
-   
-   left: 110px;
-   top: 490px;
-   transform: rotate(180deg);
-   background-color: red;
 
 }
 
@@ -266,84 +258,11 @@ height: 200px;
   margin-top: 180px;
   margin-left: 120px;
   font-size: 30px;
-  color: #4C5155
+  padding-left: 0.5%;
+    border-left: solid 5px red;
+    color: black;
 
 }
-
-.mysvg2{
-  
-    position: absolute;
-    left: 110px;
-    bottom: -700px;
-    transform: rotate(180deg);
-    background-color: red;
-   
-}
-
-
-
-.fb {
-
-   position: fixed;
-   height: 65px;
-   width: 65px;
-   background-color: #1da1f2;
-   border-radius: 50%;
-   left: -26px;
-
-}
-
-
-.tw {
-    position: fixed;
-   height: 65px;
-   width: 65px;
-   background-color: #3b5998;
-   border-radius: 50%;
-   left: -26px;
-   top: 470px;
-   
-}
-
-.ww {
-
-    position: fixed;
-    height: 65px;
-    width: 65px;
-    background-color: #F34487;
-    border-radius: 50%;
-    left: -26px;
-    top: 550px;
-}
-
-.gg {
-
-    position: fixed;
-    height: 65px;
-    width: 65px;
-    background-color: #FF3E30;
-    border-radius: 50%;
-    left: -26px;
-    top: 630px;
-
-}
-
-#imgg {
-
-  left: 0px;
-  width: 70px;
-  height: 30px;
-  margin-top: 15px;
-}
-
-#twimg {
-    left: 0px;
-    width: 70px;
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 3px;
-}
-
 
 .myfourthdiv {
     height: 600px;
@@ -353,9 +272,9 @@ height: 200px;
 }
 
 
-.card {
+.AAcard {
     position: absolute;
-    top: 1690px;
+    top: 2500px;
     width: 156px;
     height: 50px;
     border-radius: 0%;
@@ -371,7 +290,7 @@ height: 200px;
 
 .card2 {
     position: absolute;
-    top: 1995px;
+    top: 2810px;
     width: 156px;
     height: 45px;
     border-radius: 0%;
@@ -408,16 +327,6 @@ height: 200px;
    margin-left: 56px;
    margin-top: 20px;
 
-}
-
-.mysvg3 {
-
-    position: absolute;
-   
-    left: 110px;
-    bottom: -1370px;
-    transform: rotate(180deg);
-    background-color: red;
 }
 
 .myposter {
