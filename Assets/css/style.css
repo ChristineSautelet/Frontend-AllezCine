@@ -2,4 +2,474 @@
     background-color: #ff4141;
     color: white;
     border: none;
+    width: 200px;
+}
+
+
+body {
+  background-color: white
+
+
+
+}
+
+
+.mydiv {
+   display: block;
+   width: 1000px;
+   height: 370px;
+   background-color: whitesmoke;
+   border: unset;
+   border-color: whitesmoke;
+   filter: drop-shadow(rgba(0, 0, 0, 0) 0px 0px 38px) drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 6px);
+   margin-top: 20px;
+
+}
+
+
+.flex-container {
+   display: flex;
+   flex-direction: row;
+   height: 300px;
+   margin: 0 -15px;
+   
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-left: 10px;
+   padding-right: 10px;
+   
+}
+
+
+.flexitem {
+    display: flex;
+    flex-direction: row;
+    
+    
+    background-image:url ;
+    border: solid 0.5px black;
+    background-size: 200px;
+    margin: 0 15px;
+  
+
+}
+
+
+.container-text {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin-left: 45px;
+    
+}
+
+
+.QQ {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    
+   
+    
+
+
+}
+
+.AA {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    margin-left: 40px;
+    font-weight: bolder;
+}
+
+.AA2  {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+
+
+.featured {
+
+   margin-top: 100px;
+   margin-left: 120px;
+   text-transform: uppercase;
+   font-size: 30px;
+   color: #4C5155
+
+}
+
+.barre {
+
+    height: 50px;
+    width: 5px;
+    background-color: red;
+    padding: 20px
+
+
+}
+
+
+.mysvg {
+   position: absolute;
+   
+   left: 110px;
+   top: 490px;
+   transform: rotate(180deg);
+   background-color: red;
+
+}
+
+
+line {stroke:rgb(0, 0, 0); stroke-width: 2}
+
+
+.mysecdiv {
+ 
+    width: 1130px;
+    height:  700px;
+
+}
+
+.btn-group {
+
+  margin-top: 50px;
+  
+  color: #4C5155;
+  margin-left: 10px;
+  background-color: lightgray;
+
+
+}
+
+
+.first {
+
+  width: 100px;
+  border-radius: 0%;
+  
+}
+.second {
+
+    width: 100px;
+    border-radius: 0%;
+    
+  }
+  .third {
+
+    width: 100px;
+    border-radius: 0%
+  }
+
+.last {
+   border-radius: 0%;
+   width: 155px;
+
+
+}
+
+
+button :hover {
+
+ background-color: red;
+
+}
+
+
+.ee {
+
+width: 200px;
+height: 200px;
+
+}
+
+
+.mythirddiv {
+
+  height: 710px;
+  width: 1050px;
+  background-color: whitesmoke;
+  margin-top: 20px;
+  margin-left: 30px;
+  filter: drop-shadow(rgba(0, 0, 0, 0) 0px 0px 38px) drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 6px);
+
+
+}
+
+.flexitem2 {
+
+    display: flex;
+    flex-direction: row;
+    padding-top: px;
+    padding-bottom: px;
+    
+    border: solid 0.5px black;
+    background-size: 200px;
+    margin: 0 15px;
+
+}
+
+
+.moremovie {
+    position: absolute;
+    right: 628px;
+    border-radius: 0%;
+    width: 150px;
+    background-color: red;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: unset 0.5px black;
+}
+
+.p1 {
+    position: absolute;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 10px;
+    top: 260px;
+
+}
+
+
+
+.p2 {
+    position: absolute;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 20px;
+    top: 260px;
+    font-size: 10px;
+
+
+}
+
+
+.p3 {
+  position: absolute;
+  top: 600px;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+.p4 {
+    position: absolute;
+    top: 600px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 10px;
+  }
+
+
+.shopmovie {
+  margin-top: 180px;
+  margin-left: 120px;
+  font-size: 30px;
+  color: #4C5155
+
+}
+
+.mysvg2{
+  
+    position: absolute;
+    left: 110px;
+    bottom: -700px;
+    transform: rotate(180deg);
+    background-color: red;
+   
+}
+
+
+
+.fb {
+
+   position: fixed;
+   height: 65px;
+   width: 65px;
+   background-color: #1da1f2;
+   border-radius: 50%;
+   left: -26px;
+
+}
+
+
+.tw {
+    position: fixed;
+   height: 65px;
+   width: 65px;
+   background-color: #3b5998;
+   border-radius: 50%;
+   left: -26px;
+   top: 470px;
+   
+}
+
+.ww {
+
+    position: fixed;
+    height: 65px;
+    width: 65px;
+    background-color: #F34487;
+    border-radius: 50%;
+    left: -26px;
+    top: 550px;
+}
+
+.gg {
+
+    position: fixed;
+    height: 65px;
+    width: 65px;
+    background-color: #FF3E30;
+    border-radius: 50%;
+    left: -26px;
+    top: 630px;
+
+}
+
+#imgg {
+
+  left: 0px;
+  width: 70px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+#twimg {
+    left: 0px;
+    width: 70px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+
+.myfourthdiv {
+    height: 600px;
+    width: 900px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+
+.card {
+    position: absolute;
+    top: 1690px;
+    width: 156px;
+    height: 50px;
+    border-radius: 0%;
+    opacity: 0.5;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: black;
+    text-align: center;
+    border: unset black  1px;
+}
+
+
+.card2 {
+    position: absolute;
+    top: 1995px;
+    width: 156px;
+    height: 45px;
+    border-radius: 0%;
+    opacity: 0.5;
+    font-weight: bold;
+    background-color: black;
+    text-align: center;
+    color: white;
+    border: unset black  1px;
+}
+
+
+.myfifthdiv {
+    position: absolute;
+    height: 560px;
+    width: 400px;
+    top: 1450px;
+    margin-top: 20px;
+    right: 7px;
+    background-color: whitesmoke;
+    filter: drop-shadow(rgba(0, 0, 0, 0) 0px 0px 38px) drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 6px);
+}
+
+.trailercard {
+    position: relative;
+    top: 400px;
+    width: 400px;
+    height: 180px;
+    background-color: black;
+}
+
+.contactus {
+    color: #4C5155;
+   margin-left: 56px;
+   margin-top: 20px;
+
+}
+
+.mysvg3 {
+
+    position: absolute;
+   
+    left: 110px;
+    bottom: -1370px;
+    transform: rotate(180deg);
+    background-color: red;
+}
+
+.myposter {
+   width: 165px;
+   height: 240px;
+   margin-bottom: 90px;
+}
+
+.myposter2 {
+    width: 175px;
+    height: 240px;
+    margin-top: px;
+ }
+
+.myposter3 {
+
+    width: 155px;
+    height: 240px;
+
+}
+
+
+
+.lessmovies {
+    position: absolute;
+    right: 628px;
+    border-radius: 0%;
+    width: 150px;
+    background-color: red;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: unset 0.5px black;
+    
+}
+
+
+@keyframes switch {
+0% {
+   opacity: 0
+
+
+}
+100% {
+   opacity: 1;
+
+}
+
+
 }
