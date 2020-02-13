@@ -17,14 +17,12 @@
     <!-- START Bootstrap-Cookie-Alert -->
     <div class="alert text-center cookiealert" role="alert">
         <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
-
         <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
             I agree
         </button>
     </div>
     <!-- END Bootstrap-Cookie-Alert -->
-
-    <div class="jumbotron jumbotron-fluid carousel slide carousel-inner col-12" id="carousel" data-ride="carousel">
+    <header class="jumbotron jumbotron-fluid carousel slide carousel-inner col-12" id="carousel" data-ride="carousel">
         <div class="carousel-item active carred" style="background-image:url('/img/temp.jpg'); z-index: -1;" id="slide1"></div>
         <div class="carousel-item" style="background-image:url('/img/Pika.jpg'); z-index: -1;" id="slide2"></div>
         <div class="carousel-item" style="background-image:url('/img/Peluche.jpg');z-index: -1;" id="slide3"></div>
@@ -62,7 +60,7 @@
                         <button type="button" class="btn btn-void ml-3 my-auto"></button>
                     </li>
                     <li class="nav-item active ml-5">
-                        <p class="nav-link" href="#" id="contact">Contact</p>
+                        <a class="nav-link" href="#TTcontact-container" id="contact">Contact</a>
                     </li>
                 </ul>
                 <form class="searchbar rounded-pill" id="search">
@@ -86,7 +84,7 @@
             <li data-target="#carousel" data-slide-to="2"></li>
             <li data-target="#carousel" data-slide-to="3"></li>
         </ol>
-    </div>
+    </header>
 
     <div class="container-fluid" id="TTlogin-row">
         <div class="row">
@@ -225,9 +223,47 @@
 
     <!-- MAIN -->
 
-    <div class="container-fluid text-info" id="TTmain-container">  
+    <div class="container-fluid" id="TTmain-container">  
+        <div class="container-fluid accordion" id="TTcontact-container">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="TTcollapse-btn">
+                        <h3 class="contactus text-uppercase mb-0">Contact Us</h3>
+                    </button>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#TTcollapse-btn">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="inputfirstname" placeholder="Firstname">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="inputlastname" placeholder="Lastname">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" id="inputemail" placeholder="Email">
+                                 </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="inputsubject" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message-text" placeholder="Your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary ml-5 text-uppercase" value="Submit Form" onclick="messageReceived(inputfirstname.value, inputlastname.value, inputemail.value, inputsubject.value)">Send message</button>
+                        </form>                    
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <!-- CONTACT US -->
     
+    
+
     <!-- FOOTER -->
 
     <footer class="footer w-100 pt-5">
@@ -308,11 +344,12 @@
     </footer>
 
     <!-- BACK TO TOP -->
-
+    <div id="btnHere"></div>
     <button onclick="topFunction()" id="TTbtnUp" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
     <!-- SCRIPT HERE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script/messageReceived.js"></script>
     <script src="script/script.js"></script>
     <script src="script/backToTop.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

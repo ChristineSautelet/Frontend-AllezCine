@@ -4,8 +4,6 @@ $primarytextcolor: white;
 $secundarytextcolor: #ec4141;
 
 body{
-    margin: 0 !important;
-    padding: 0 !important;
     .red{
         color: $secundarytextcolor;
     }
@@ -14,9 +12,9 @@ body{
         border: none;
     }
     #carousel {
-        position: absolute;
+        position: relative;
         margin-top: 0;
-        top: -8%;
+        top: 0;
         bottom: 0; 
         left: 0;
         right: 0;
@@ -25,6 +23,8 @@ body{
         }
         .carousel-item {
             background: no-repeat center/cover;
+            position: absolute;
+            top: 0;
         }
         ol.carousel-indicators {
             margin-bottom: 2%;
@@ -38,7 +38,7 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         nav{
-            margin-top: 10%;
+            margin-top: 0%;
             margin-left: 0;
             display: flex;
             #AllezCine{
@@ -120,8 +120,8 @@ body{
         color: $primarytextcolor;
     }
     #TTlogin-row{
-        position:absolute;
-        bottom: 7%;
+        margin-top: -3%;
+        position:relative;
         background-color: $primarybgcolor;
         padding-top: 0.5%;
         padding-bottom: 0.5%;
@@ -166,11 +166,32 @@ body{
         }
     }
 
+    #TTmain-container{
+        position: relative;
+        bottom: -15%;
+        #TTcontact-container{
+            .card{
+                border: none;
+                .card-header{
+                    background-color: white;
+                    .contactus{
+                        margin-left: 5%;
+                        padding-left: 0.5%;
+                        border-left: solid 5px red;
+                        color: black;
+                        width: 150%;
+                    } 
+                }
+            }
+        }
+    }
+
     footer{
+        width: 100%;
         overflow:hidden;
-        bottom: -80%;
+        bottom: -200%;
         background-color: black;
-        position: absolute;
+        position: relative;
         #TTsubs{
             h3{
                 color: $secundarytextcolor;
@@ -224,7 +245,7 @@ body{
     font-size: 18px;
     border: solid 5px red;
     outline: none;
-    background-color: transparent;
+    background-color: black;
     color: white;
     cursor: pointer;
     padding: 20px;
