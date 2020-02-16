@@ -190,6 +190,11 @@ body{
             #TTsubs-btn{
                 height: 5vh;
                 width: 100%;
+                background-color: $primarybgcolor;
+                color: $primarytextcolor;
+                width: 100px;
+                height: 40px;
+                border: none;
             }
         }
         #TTfooter-header{
@@ -216,19 +221,42 @@ body{
     }
 }
 #TTmain-container{
+    &:hover{
+        text-decoration: none;
+        background-color: white;
+    }
     position: relative;
     #TTcontact-container{
+        &:hover{
+            text-decoration: none;
+            background-color: white;
+        }
         .card{
+            &:hover{
+                text-decoration: none;
+                background-color: none;
+            }
             border: none;
             .card-header{
                 background-color: white;
-                .contactus{
-                    width: 150%;
-                    margin-left: 5%;
-                    padding-left: 0.5%;
-                    border-left: solid 5px red;
-                    color: black;
-                } 
+                &:hover{
+                    text-decoration: none;
+                    background-color: white;
+                }
+                #TTcollapse-btn{
+                   .contactus{
+                        width: 150%;
+                        margin-left: 5%;
+                        padding-left: 0.5%;
+                        border-left: solid 5px red;
+                        color: black;
+                    }
+                    &:hover{
+                        text-decoration: none;
+                        background-color: white;
+                    }
+                }
+                
             }
         }
     }
@@ -262,5 +290,5 @@ body{
 }
 
 #tumelesbrise{
-    
+    margin: 0%;
 }

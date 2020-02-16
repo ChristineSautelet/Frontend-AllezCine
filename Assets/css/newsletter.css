@@ -1,0 +1,47 @@
+body{
+    display: block;
+    background-color: rgb(216, 216, 216);
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+#header{
+    background-color: #ffa0a0;
+    color: white;
+}
+
+.container-headerbody{
+    margin: auto;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.movie-selection{
+    display: block;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container-footer{
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+.footerP{
+    padding-left: 60px;
+}
+
+a{
+    color: rgb(92, 92, 255);
+    text-decoration: none;
+}
+
+.red{
+    color: #ec4141;
+}
